@@ -47,4 +47,17 @@ require("lazy").setup({
       )
     end,
   },
+  {
+    "nvim-pack/nvim-spectre",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = function()
+      require("spectre").setup()
+      vim.keymap.set(
+        "n",
+        "<leader>s",
+        function() require("spectre").open() end,
+        { silent = true, desc = "Search and Replace" }
+      )
+    end,
+  },
 })
