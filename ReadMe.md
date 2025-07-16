@@ -14,3 +14,6 @@ Toggle it with `<leader>e` (space + e). Files are displayed with icons thanks to
 The setup includes **telescope.nvim** for quickly finding files.
 Launch it with `<leader>f` (space + f).
 
+## VS Code Theme
+The colorscheme uses **Mofiqul/vscode.nvim** to mimic VS Code's look.
+
