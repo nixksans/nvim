@@ -6,6 +6,9 @@
 ## Install the Plugin Manager lazy.nvim:
 ```git clone https://github.com/folke/lazy.nvim.git ~/.local/share/nvim/site/pack/lazy/start/lazy.nvim```
 
+## Copy below into terminal font settings
+```Menlo, Monaco, 'Courier New', monospace```
+
 ## File Explorer
 The configuration uses **nvim-tree.lua** for browsing files.
 Toggle it with `<leader>e` (space + e). Files are displayed with icons thanks to **nvim-web-devicons**.

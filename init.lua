@@ -71,7 +71,9 @@ require("lazy").setup({
   {
     "Mofiqul/vscode.nvim",
     config = function()
-      require("vscode").setup({})
+      require("vscode").setup({
+        disable_nvimtree_bg = false,
+      })
       require("vscode").load()
     end,
   },
