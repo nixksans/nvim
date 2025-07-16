@@ -1,0 +1,1 @@
+I am trying to recreate my VS Code experience in NeoVim. I like the File explorer and file search in VS Code but I don't use the debbuger or the marketplace.
