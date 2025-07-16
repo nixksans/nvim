@@ -10,3 +10,7 @@
 The configuration uses **nvim-tree.lua** for browsing files.
 Toggle it with `<leader>e` (space + e). Files are displayed with icons thanks to **nvim-web-devicons**.
 
+## Fuzzy Finder
+The setup includes **telescope.nvim** for quickly finding files.
+Launch it with `<leader>f` (space + f).
+
