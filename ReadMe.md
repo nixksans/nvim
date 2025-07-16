@@ -14,3 +14,7 @@ Toggle it with `<leader>e` (space + e). Files are displayed with icons thanks to
 The setup includes **telescope.nvim** for quickly finding files.
 Launch it with `<leader>f` (space + f).
 
+## Search and Replace
+For project-wide search and replace, the config now includes **nvim-spectre**.
+Open its panel with `<leader>s` (space + s).
+
