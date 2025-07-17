@@ -32,3 +32,6 @@ Parsers update automatically via `:TSUpdate`
 
 ## Buffer Tabs
 Use **bufferline.nvim** to view open buffers in a tab line. Navigate with `<S-h>` and `<S-l>` and close the current buffer with `<leader>c`.
+
+## Normal Mode on Buffer Open
+Buffers always switch to Normal mode when opened via the tree, Telescope, or bufferline.
