@@ -4,7 +4,7 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Load individual plugin specs
 local plugins = {
-  require("plugins.nvim-tree"),
+  require("plugins.tree"),
   require("plugins.telescope"),
   require("plugins.vscode"),
   require("plugins.treesitter"),
