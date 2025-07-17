@@ -118,3 +118,6 @@ require("lazy").setup({
     end
 }
 })
+
+-- load the custom dashboard when Vim starts without a file
+require("snacks").setup()
