@@ -113,6 +113,35 @@ require("lazy").setup({
       lspconfig.pyright.setup({})
     end,
   },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    config = function()
+      require("nvim-treesitter.configs").setup({
+        ensure_installed = {
+          "ruby",
+          "go",
+          "python",
+          "dart",
+          "javascript",
+          "typescript",
+          "json",
+          "html",
+          "css",
+          "bash",
+          "lua",
+          "markdown",
+          "markdown_inline",
+          "yaml",
+          "vim",
+          "sql",
+          "dockerfile",
+          "tsx",
+        },
+        highlight = { enable = true },
+      })
+    end,
+  },
 {
     "lewis6991/gitsigns.nvim",
     config = function()
