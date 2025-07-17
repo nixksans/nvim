@@ -21,3 +21,6 @@ Launch it with `<leader>f` (space + f).
 ## VS Code Theme
 The colorscheme uses **Mofiqul/vscode.nvim** to mimic VS Code's look.
 
+## GitHub Copilot
+The configuration integrates **github/copilot.vim** for AI-powered code completion.
+

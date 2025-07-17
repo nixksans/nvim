@@ -81,4 +81,7 @@ require("lazy").setup({
       require("vscode").load()
     end,
   },
+  {
+    "github/copilot.vim",
+  },
 })
