@@ -24,3 +24,8 @@ The colorscheme uses **Mofiqul/vscode.nvim** to mimic VS Code's look.
 ## Git Integration
 The setup includes **gitsigns.nvim** for inline git information similar to GitLens.
 Signs show added, modified, and deleted lines and you can toggle blame with `:Gitsigns toggle_current_line_blame`.
+
+## AI Assistance
+This setup includes **github/copilot.vim** to bring GitHub Copilot suggestions
+into Neovim. After installation, run `:Copilot setup` to sign in. Accept a
+suggestion in insert mode by pressing `<Tab>`, just like in VS Code.
