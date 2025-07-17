@@ -94,6 +94,19 @@ require("lazy").setup({
         disable_nvimtree_bg = false,
       })
       require("vscode").load()
+      vim.keymap.set(
+        "n",
+        "<leader>t",
+        function()
+          if vim.o.background == "dark" then
+            vim.o.background = "light"
+          else
+            vim.o.background = "dark"
+          end
+          require("vscode").load()
+        end,
+        { desc = "Toggle VS Code theme" }
+      )
     end,
   },
 {

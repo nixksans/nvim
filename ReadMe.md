@@ -20,6 +20,7 @@ Launch grep with `<leader>f` (space + f) or fuzzy file search with `<leader>p` (
 
 ## VS Code Theme
 The colorscheme uses **Mofiqul/vscode.nvim** to mimic VS Code's look.
+Toggle between light and dark modes with `<leader>t` (space + t).
 
 ## Git Integration
 The setup includes **gitsigns.nvim** for inline git information similar to GitLens.
