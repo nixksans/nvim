@@ -24,3 +24,8 @@ The colorscheme uses **Mofiqul/vscode.nvim** to mimic VS Code's look.
 ## Git Integration
 The setup includes **gitsigns.nvim** for inline git information similar to GitLens.
 Signs show added, modified, and deleted lines and you can toggle blame with `:Gitsigns toggle_current_line_blame`.
+
+## Syntax Highlighting
+**nvim-treesitter** provides better code highlighting and indentation.
+Parsers update automatically via `:TSUpdate` and are configured for Ruby, Go,
+Python, Dart, JavaScript, TypeScript, HTML, and CSS.

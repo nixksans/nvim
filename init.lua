@@ -105,7 +105,28 @@ require("lazy").setup({
       require("vscode").load()
     end,
   },
-{
+  {
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    config = function()
+      require("nvim-treesitter.configs").setup({
+        ensure_installed = {
+          "ruby",
+          "go",
+          "python",
+          "dart",
+          "javascript",
+          "typescript",
+          "html",
+          "css",
+        },
+        auto_install = true,
+        highlight = { enable = true },
+        indent = { enable = true },
+      })
+    end,
+  },
+  {
     "lewis6991/gitsigns.nvim",
     config = function()
         require("gitsigns").setup({
