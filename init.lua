@@ -28,6 +28,9 @@ vim.keymap.set('n', '<leader>q', ':qa<CR>', { desc = 'Quit all' })
 -- Save Command
 vim.keymap.set('n', '<leader>s', '<cmd>w<CR>', { desc = 'Save file' })
 
+-- Go back to previous file
+vim.keymap.set("n", "<leader>b", "<C-^>", { desc = "Go back to previous file" })
+
 -- Plugin Manager Bootstrap
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 vim.opt.rtp:prepend(lazypath)
