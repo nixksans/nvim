@@ -63,7 +63,16 @@ require("lazy").setup({
       },
     },
     config = function()
-      require("telescope").setup({
+      local telescope = require("telescope")
+      local actions = require("telescope.actions")
+      telescope.setup({
+        defaults = {
+          mappings = {
+            i = {
+              ["<esc>"] = actions.close,
+            },
+          },
+        },
         extensions = {
           fzf = {
             fuzzy = true,
@@ -82,9 +91,7 @@ require("lazy").setup({
       vim.keymap.set(
         "n",
         "<leader>p",
-        function()
-          require("telescope.builtin").find_files({ initial_mode = "normal" })
-        end,
+        "<cmd>Telescope find_files<CR>",
         { silent = true, desc = "Fuzzy find files" }
       )
     end,

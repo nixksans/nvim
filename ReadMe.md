@@ -16,7 +16,7 @@ Toggle it with `<leader>e` (space + e). Files are displayed with icons thanks to
 ## Fuzzy Finder
 The setup includes **telescope.nvim** with the **telescope-fzf-native** extension
 for faster fuzzy searching.
-Launch grep with `<leader>f` (space + f). Fuzzy file search is available with `<leader>p` (space + p); it opens in normal mode so pressing `<Esc>` once closes the picker.
+Launch grep with `<leader>f` (space + f). Fuzzy file search is available with `<leader>p` (space + p). The picker starts ready for input and pressing `<Esc>` once closes it.
 
 ## VS Code Theme
 The colorscheme uses **Mofiqul/vscode.nvim** to mimic VS Code's look.
