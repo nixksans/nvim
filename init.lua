@@ -22,6 +22,9 @@ vim.g.mapleader = " "
 -- Make space do nothing in normal and visual modes
 vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 
+-- Exit Commands
+vim.keymap.set('n', '<leader>q', ':qa<CR>', { desc = 'Quit all' })
+
 -- Plugin Manager Bootstrap
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 vim.opt.rtp:prepend(lazypath)
