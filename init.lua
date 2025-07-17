@@ -12,6 +12,10 @@ vim.opt.termguicolors = true
 vim.opt.mouse = "a"
 vim.opt.clipboard = "unnamedplus"
 
+-- Cursor Style
+-- Use a thin vertical bar to mimic VS Code's cursor
+vim.opt.guicursor = "a:ver25"
+
 -- Leader Key
 vim.g.mapleader = " "
 
