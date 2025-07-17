@@ -77,11 +77,16 @@ require("lazy").setup({
       require("vscode").load()
     end,
   },
-  {
+{
     "lewis6991/gitsigns.nvim",
-    dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
-      require("gitsigns").setup()
-    end,
-  },
+        require("gitsigns").setup({
+        current_line_blame = true,
+        current_line_blame_opts = {
+            delay = 300,
+            virt_text_pos = "eol",
+        },
+        })
+    end
+}
 })
