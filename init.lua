@@ -63,7 +63,16 @@ require("lazy").setup({
       },
     },
     config = function()
-      require("telescope").setup({
+      local telescope = require("telescope")
+      local actions = require("telescope.actions")
+      telescope.setup({
+        defaults = {
+          mappings = {
+            i = {
+              ["<esc>"] = actions.close,
+            },
+          },
+        },
         extensions = {
           fzf = {
             fuzzy = true,
