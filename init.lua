@@ -76,8 +76,8 @@ require("lazy").setup({
       vim.keymap.set(
         "n",
         "<leader>f",
-        "<cmd>Telescope find_files<CR>",
-        { silent = true, desc = "Fuzzy find files" }
+        "<cmd>Telescope live_grep<CR>",
+        { silent = true, desc = "Grep in project" }
       )
       vim.keymap.set(
         "n",
