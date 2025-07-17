@@ -24,3 +24,7 @@ The colorscheme uses **Mofiqul/vscode.nvim** to mimic VS Code's look.
 ## Git Integration
 The setup includes **gitsigns.nvim** for inline git information similar to GitLens.
 Signs show added, modified, and deleted lines and you can toggle blame with `:Gitsigns toggle_current_line_blame`.
+
+## Code Folding
+Code blocks can be folded with **nvim-ufo** which uses Tree-sitter to create
+folds similar to VS Code. Use `zM` to close all folds and `zR` to open them.
