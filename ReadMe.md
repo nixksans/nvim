@@ -11,7 +11,8 @@
 
 ## File Explorer
 The configuration uses **nvim-tree.lua** for browsing files.
-Toggle it with `<leader>e` (space + e). Files are displayed with icons thanks to **nvim-web-devicons**.
+Toggle it with `<leader>[` (space + \[). Files are displayed with icons thanks to **nvim-web-devicons**.
+You can also press `<leader>e` in insert mode to escape back to normal mode.
 
 ## Fuzzy Finder
 The setup includes **telescope.nvim** with the **telescope-fzf-native** extension

@@ -22,6 +22,9 @@ vim.g.mapleader = " "
 -- Make space do nothing in normal and visual modes
 vim.keymap.set({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 
+-- Map <leader>e to act as Escape
+vim.keymap.set("i", "<leader>e", "<Esc>", { desc = "Escape insert mode" })
+
 -- Exit Commands
 vim.keymap.set('n', '<leader>q', ':qa<CR>', { desc = 'Quit all' })
 
@@ -44,7 +47,7 @@ require("lazy").setup({
       require("nvim-tree").setup()
       vim.keymap.set(
         "n",
-        "<leader>e",
+        "<leader>[",
         "<cmd>NvimTreeToggle<CR>",
         { silent = true, desc = "Toggle file explorer" }
       )
