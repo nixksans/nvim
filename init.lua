@@ -70,6 +70,12 @@ require("lazy").setup({
         "<cmd>Telescope find_files<CR>",
         { silent = true, desc = "Fuzzy find files" }
       )
+      vim.keymap.set(
+        "n",
+        "<leader>p",
+        "<cmd>Telescope find_files<CR>",
+        { silent = true, desc = "Fuzzy find files" }
+      )
     end,
   },
   {
