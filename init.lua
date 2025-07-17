@@ -105,7 +105,7 @@ require("lazy").setup({
       require("vscode").load()
     end,
   },
-{
+  {
     "lewis6991/gitsigns.nvim",
     config = function()
         require("gitsigns").setup({
@@ -116,5 +116,18 @@ require("lazy").setup({
         },
         })
     end
-}
+  },
+  {
+    "github/copilot.vim",
+    config = function()
+      -- Use <Tab> to accept Copilot suggestions like VS Code
+      vim.g.copilot_no_tab_map = true
+      vim.api.nvim_set_keymap(
+        "i",
+        "<Tab>",
+        'copilot#Accept("\<CR>")',
+        { silent = true, expr = true, script = true, replace_keycodes = false }
+      )
+    end,
+  }
 })
