@@ -6,6 +6,7 @@ vim.opt.rtp:prepend(lazypath)
 local plugins = {
   require("plugins.tree"),
   require("plugins.telescope"),
+  require("plugins.bufferline"),
   require("plugins.vscode"),
   require("plugins.treesitter"),
   require("plugins.gitsigns"),

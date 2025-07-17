@@ -28,3 +28,6 @@ Signs show added, modified, and deleted lines and you can toggle blame with `:Gi
 ## Syntax Highlighting
 **nvim-treesitter** provides better code highlighting and indentation.
 Parsers update automatically via `:TSUpdate`
+
+## Buffer Tabs
+Use **bufferline.nvim** to view open buffers in a tab line. Navigate with `<S-h>` and `<S-l>` and close the current buffer with `<leader>c`.
