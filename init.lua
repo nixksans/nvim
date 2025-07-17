@@ -82,7 +82,9 @@ require("lazy").setup({
       vim.keymap.set(
         "n",
         "<leader>p",
-        "<cmd>Telescope find_files<CR>",
+        function()
+          require("telescope.builtin").find_files({ initial_mode = "normal" })
+        end,
         { silent = true, desc = "Fuzzy find files" }
       )
     end,
