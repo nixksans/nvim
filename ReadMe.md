@@ -12,6 +12,7 @@
 ## File Explorer
 The configuration uses **nvim-tree.lua** for browsing files.
 Toggle it with `<leader>e` (space + e). Files are displayed with icons thanks to **nvim-web-devicons**.
+You can open files with a single mouse click in the explorer for a more VS Code like feel.
 
 ## Fuzzy Finder
 The setup includes **telescope.nvim** with the **telescope-fzf-native** extension
