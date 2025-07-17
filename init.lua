@@ -105,6 +105,14 @@ require("lazy").setup({
       require("vscode").load()
     end,
   },
+  {
+    "neovim/nvim-lspconfig",
+    config = function()
+      local lspconfig = require("lspconfig")
+      lspconfig.lua_ls.setup({})
+      lspconfig.pyright.setup({})
+    end,
+  },
 {
     "lewis6991/gitsigns.nvim",
     config = function()
