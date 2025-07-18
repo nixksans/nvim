@@ -3,22 +3,25 @@ return {
   priority = 1000,
   lazy = false,
   opts = {
-    picker = {
-      enabled = true,
-      win = {
-        input = {
-          keys = {
-            ["<Esc>"] = { "close", mode = { "i", "n" } },
-          },
-        },
-      },
-      formatters = {
-        file = {
-          truncate = false,
-        },
-      },
-    },
+    -- picker = {
+    --   enabled = true,
+    --   win = {
+    --     input = {
+    --       keys = {
+    --         ["<Esc>"] = { "close", mode = { "i", "n" } },
+    --       },
+    --     },
+    --   },
+    --   formatters = {
+    --     file = {
+    --       truncate = false,
+    --     },
+    --   },
+    -- },
     explorer = {
+      enabled = true,
+    },
+    terminal = {
       enabled = true,
     },
     dashboard = {
@@ -27,6 +30,7 @@ return {
         { section = "header" },
         { icon = " ", title = "Keymaps", section = "keys", indent = 2, padding = 1 },
         { icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
+        { icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },
         { section = "startup" },
       },
     },
