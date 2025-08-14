@@ -14,4 +14,4 @@ vim.keymap.set("n", "<leader>s", "<cmd>w<CR>", { desc = "Save file" })
 vim.keymap.set("n", "<leader>b", "<C-^>", { desc = "Go back to previous file" })
 
 -- Local file search
-vim.keymap.set('n', '<leader-f>', '<cmd>Telescope current_buffer_fuzzy_find<CR>', { noremap = true })
+vim.keymap.set('n', '<C-f>', '<cmd>Telescope current_buffer_fuzzy_find<CR>', { noremap = true })
