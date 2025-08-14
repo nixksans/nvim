@@ -66,5 +66,15 @@ return {
     vim.keymap.set("n", "<leader>e", function()
       snacks.explorer.open()
     end, { desc = "Open Explorer" })
+    
+    -- Terminal toggle (VS Code style with Ctrl+`)
+    vim.keymap.set({ "n", "t" }, "<C-S-`>", function()
+      snacks.terminal.toggle()
+    end, { desc = "Toggle Terminal" })
+    
+    -- Alternative terminal toggle keymaps in case backtick doesn't work
+    vim.keymap.set({ "n", "t" }, "<leader>t", function()
+      snacks.terminal.toggle()
+    end, { desc = "Toggle Terminal" })
   end,
 }
