@@ -10,6 +10,7 @@ local plugins = {
   require("plugins.vscode"),
   require("plugins.treesitter"),
   require("plugins.gitsigns"),
+  require("plugins.whichkey"),
 }
 
 -- Plugin Setup
